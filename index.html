@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Sriyan Cloud Kitchen — Home-style food, delivered</title>
+<meta name="description" content="Sriyan Cloud Kitchen — fresh, home-style meals cooked to order and delivered near you. Browse the menu and order straight to WhatsApp." />
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E🍲%3C/text%3E%3C/svg%3E" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Work+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-header" id="top">
+  <div class="wrap header-inner">
+    <a href="#top" class="brand">
+      <span class="brand-mark" aria-hidden="true">
+        <svg viewBox="0 0 48 48" width="34" height="34"><path d="M8 20c0-7 6-13 16-13s16 6 16 13" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"/><path d="M6 20h36l-3 18a4 4 0 0 1-4 3H13a4 4 0 0 1-4-3L6 20Z" fill="currentColor" opacity="0.15"/><path d="M6 20h36" stroke="currentColor" stroke-width="3" stroke-linecap="round"/><path d="M9.5 26c1 1 2 1 3 0M17.5 26c1 1 2 1 3 0M25.5 26c1 1 2 1 3 0M33.5 26c1 1 2 1 3 0" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+      </span>
+      <span class="brand-name">Sriyan<em>Cloud Kitchen</em></span>
+    </a>
+
+    <nav class="main-nav" id="mainNav">
+      <a href="#menu">Menu</a>
+      <a href="#how">How it works</a>
+      <a href="#story">Our story</a>
+      <a href="#catering">Catering</a>
+      <a href="#visit">Find us</a>
+    </nav>
+
+    <div class="header-actions">
+      <a class="btn btn-ghost hide-mobile" href="tel:+911234567890">Call to order</a>
+      <button class="cart-pill" id="cartPill" type="button" aria-haspopup="true" aria-expanded="false">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 4h2l2.4 12.4a2 2 0 0 0 2 1.6h8.2a2 2 0 0 0 2-1.6L21 8H6"/><circle cx="9" cy="21" r="1.4" fill="currentColor" stroke="none"/><circle cx="18" cy="21" r="1.4" fill="currentColor" stroke="none"/></svg>
+        <span id="cartCount">0</span>
+      </button>
+      <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false" aria-controls="mainNav">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div class="hero-copy">
+        <p class="kicker">Cloud kitchen · Phagwara, near LPU</p>
+        <h1>No dining room.<br>Just the food<br>that matters.</h1>
+        <p class="hero-sub">Sriyan runs out of one kitchen and cooks one thing well at a time — Punjabi and Indo-Chinese comfort food, made fresh per order and out the door in under 30 minutes.</p>
+        <div class="hero-cta">
+          <a href="#menu" class="btn btn-primary">See the menu</a>
+          <a href="#how" class="btn btn-line">How ordering works</a>
+        </div>
+        <dl class="hero-stats">
+          <div><dt>25–30 min</dt><dd>average kitchen-to-door</dd></div>
+          <div><dt>11 AM – 11 PM</dt><dd>open daily</dd></div>
+          <div><dt>4.7★</dt><dd>from regular orders</dd></div>
+        </dl>
+      </div>
+
+      <div class="hero-panel" aria-label="Today's special, order sample">
+        <div class="special-card">
+          <p class="special-label">Today's special</p>
+          <h3 id="specialName">Butter Chicken + Butter Naan</h3>
+          <p class="special-desc" id="specialDesc">Tomato-cashew gravy, slow-simmered chicken, one hand-pressed butter naan on the side.</p>
+          <div class="special-row">
+            <span class="price" id="specialPrice">₹259</span>
+            <div class="qty-stepper" data-id="special-1">
+              <button type="button" class="qty-btn" data-action="dec" aria-label="Decrease quantity">–</button>
+              <span class="qty-value" data-qty>1</span>
+              <button type="button" class="qty-btn" data-action="inc" aria-label="Increase quantity">+</button>
+            </div>
+          </div>
+          <button type="button" class="btn btn-primary btn-block add-to-order" data-id="special-1" data-name="Butter Chicken + Butter Naan" data-price="259">
+            Add to order
+          </button>
+        </div>
+        <p class="hero-panel-note">Every item on the menu below works the same way — build your order, then send it straight to our kitchen on WhatsApp.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- HOW IT WORKS -->
+  <section class="how" id="how">
+    <div class="wrap">
+      <h2 class="section-title">How an order gets to you</h2>
+      <ol class="how-steps">
+        <li>
+          <span class="how-num">1</span>
+          <h3>Browse the menu</h3>
+          <p>Filter by category, check what's veg, and see prices upfront — no surprises at checkout.</p>
+        </li>
+        <li>
+          <span class="how-num">2</span>
+          <h3>Build your order</h3>
+          <p>Add dishes and set quantities. Your running total sits in the bar at the bottom of the screen.</p>
+        </li>
+        <li>
+          <span class="how-num">3</span>
+          <h3>Send it on WhatsApp</h3>
+          <p>One tap fills in a message with everything you picked — you just confirm your address and send.</p>
+        </li>
+        <li>
+          <span class="how-num">4</span>
+          <h3>We cook, then deliver</h3>
+          <p>Nothing is pre-made. Your food goes in the pan after your order lands, and comes to you hot.</p>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- MENU -->
+  <section class="menu" id="menu">
+    <div class="wrap">
+      <h2 class="section-title">The menu</h2>
+      <p class="section-sub">Prices are per plate. <span class="veg-dot" aria-hidden="true"></span> marks vegetarian dishes.</p>
+
+      <div class="menu-filters" id="menuFilters" role="tablist" aria-label="Menu categories">
+        <!-- filled by JS -->
+      </div>
+
+      <div class="menu-grid" id="menuGrid">
+        <!-- filled by JS -->
+      </div>
+    </div>
+  </section>
+
+  <!-- STORY -->
+  <section class="story" id="story">
+    <div class="wrap story-grid">
+      <div class="story-copy">
+        <h2 class="section-title">Why a kitchen with no tables</h2>
+        <p>Sriyan started as weekend cooking for hostel friends who missed home food. Once the orders outgrew one stove, we moved into a proper kitchen — but kept the part that mattered: everything made after you order, not before.</p>
+        <p>There's no dining room because there doesn't need to be one. The kitchen's whole budget goes into ingredients, oil that gets changed on schedule, and getting your food to you while it's still hot — not into rent for a room you'd eat in for twenty minutes.</p>
+      </div>
+      <div class="story-figures">
+        <div class="figure-card">
+          <p class="figure-num">0</p>
+          <p class="figure-label">Dishes held in a warmer before your order</p>
+        </div>
+        <div class="figure-card">
+          <p class="figure-num">6</p>
+          <p class="figure-label">Spices we grind in-house every morning</p>
+        </div>
+        <div class="figure-card">
+          <p class="figure-num">1</p>
+          <p class="figure-label">Kitchen. No branches, no franchise dilution</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section class="testimonials">
+    <div class="wrap">
+      <h2 class="section-title">What regulars order again</h2>
+      <div class="quote-rail">
+        <blockquote>
+          <p>“I've stopped checking other menus. The dal makhani alone gets me through hostel exam weeks.”</p>
+          <cite>— Ananya, LPU Block 34</cite>
+        </blockquote>
+        <blockquote>
+          <p>“Ordered for 12 people for a floor party with two hours' notice. Everything arrived together, still hot.”</p>
+          <cite>— Rohit, PG near Phagwara bus stand</cite>
+        </blockquote>
+        <blockquote>
+          <p>“The biryani doesn't taste like it sat in a box for an hour. That's the whole difference.”</p>
+          <cite>— Simran, Model Town</cite>
+        </blockquote>
+      </div>
+    </div>
+  </section>
+
+  <!-- CATERING / CONTACT -->
+  <section class="catering" id="catering">
+    <div class="wrap catering-grid">
+      <div class="catering-copy">
+        <h2 class="section-title">Cooking for a group?</h2>
+        <p>Floor parties, farewells, study-group dinners — tell us the headcount and date, and we'll quote a per-head price with a fixed menu.</p>
+        <ul class="catering-list">
+          <li>48 hours' notice for groups of 15+</li>
+          <li>Fixed thali-style menus or pick-your-own</li>
+          <li>Disposable serveware included on request</li>
+        </ul>
+      </div>
+
+      <form class="catering-form" id="cateringForm" novalidate>
+        <div class="form-row">
+          <label for="ctName">Your name</label>
+          <input type="text" id="ctName" name="name" required autocomplete="name">
+        </div>
+        <div class="form-row form-row-split">
+          <div>
+            <label for="ctPhone">Phone</label>
+            <input type="tel" id="ctPhone" name="phone" required autocomplete="tel">
+          </div>
+          <div>
+            <label for="ctGuests">Guests</label>
+            <input type="number" id="ctGuests" name="guests" min="1" required>
+          </div>
+        </div>
+        <div class="form-row">
+          <label for="ctDate">Date needed</label>
+          <input type="date" id="ctDate" name="date" required>
+        </div>
+        <div class="form-row">
+          <label for="ctMsg">What are you thinking?</label>
+          <textarea id="ctMsg" name="message" rows="3" placeholder="e.g. veg-only thali for 20, budget around ₹200/head"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary btn-block">Send enquiry</button>
+        <p class="form-status" id="cateringStatus" role="status" aria-live="polite"></p>
+      </form>
+    </div>
+  </section>
+
+  <!-- VISIT / MAP -->
+  <section class="visit" id="visit">
+    <div class="wrap visit-grid">
+      <div>
+        <h2 class="section-title">Find us</h2>
+        <dl class="visit-facts">
+          <div><dt>Delivery area</dt><dd>Phagwara city, LPU campus &amp; nearby PGs (roughly 6&nbsp;km radius)</dd></div>
+          <div><dt>Kitchen hours</dt><dd>11:00 AM – 11:00 PM, every day</dd></div>
+          <div><dt>Phone / WhatsApp</dt><dd><a href="tel:+911234567890">+91 12345 67890</a></dd></div>
+          <div><dt>Email</dt><dd><a href="mailto:hello@sriyancloudkitchen.example">hello@sriyancloudkitchen.example</a></dd></div>
+        </dl>
+        <div class="social-row">
+          <a href="#" aria-label="Instagram">Instagram</a>
+          <a href="#" aria-label="Zomato">Zomato</a>
+          <a href="#" aria-label="Swiggy">Swiggy</a>
+        </div>
+      </div>
+      <div class="map-box" role="img" aria-label="Map showing the Sriyan Cloud Kitchen delivery radius around Phagwara">
+        <svg viewBox="0 0 320 260" width="100%" height="100%">
+          <rect width="320" height="260" fill="var(--parchment-deep)"/>
+          <circle cx="160" cy="130" r="95" fill="none" stroke="var(--gold)" stroke-width="2" stroke-dasharray="6 6"/>
+          <circle cx="160" cy="130" r="6" fill="var(--chili)"/>
+          <text x="160" y="112" text-anchor="middle" font-family="Work Sans, sans-serif" font-size="12" fill="var(--ink)">Kitchen</text>
+          <text x="160" y="238" text-anchor="middle" font-family="Work Sans, sans-serif" font-size="11" fill="var(--ink-soft)">~6 km delivery radius, Phagwara</text>
+        </svg>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap footer-inner">
+    <p class="footer-brand">Sriyan Cloud Kitchen</p>
+    <p class="footer-note">Made to order, one kitchen, no shortcuts. © <span id="year"></span> Sriyan Cloud Kitchen.</p>
+  </div>
+</footer>
+
+<!-- FLOATING ORDER BAR -->
+<div class="order-bar" id="orderBar" aria-live="polite">
+  <div class="wrap order-bar-inner">
+    <div class="order-bar-info">
+      <span id="orderBarCount">0 items</span>
+      <strong id="orderBarTotal">₹0</strong>
+    </div>
+    <div class="order-bar-actions">
+      <button type="button" class="btn btn-ghost-dark" id="clearOrder">Clear</button>
+      <button type="button" class="btn btn-primary" id="sendOrder">Send order on WhatsApp</button>
+    </div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
